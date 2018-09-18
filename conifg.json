@@ -1,0 +1,66 @@
+{
+  "configVersion" : "1.0.0",  
+  "sentryGroup": [
+        {
+          "Group": {
+                 "groupName": "GroupA",
+                 "sentryList": [
+                     {
+                        "Sentry" : {
+                           "SentryFQDN":"Sentry1.domain1.com",
+                           "SentryIPAddress":"192.168.10.101"
+                       }
+                     },
+                     {
+                        "Sentry" : {
+                            "SentryFQDN" : "sentry2.domain1.com",
+                            "SentryIPAddress": "192.168.10.102"
+                        }
+                     }
+                 ]
+              }
+          },
+        {
+          "Group": {
+                "groupName": "GroupB",
+                "sentryList": [
+                    {
+                       "Sentry" : {
+                            "SentryFQDN":"Sentry3.domain1.com",
+                            "SentryIPAddress":"192.168.10.103"
+                       }
+                    },
+                    {
+                       "Sentry" : {
+                            "SentryFQDN" : "sentry4.domain1.com",
+                            "SentryIPAddress": "192.168.10.104"
+                       }
+                    }
+                ]
+            }
+          },
+          {
+              "Group": {
+              "groupName": "GroupC",
+              "sentryList": [
+                 {
+                     "Sentry" : {
+                            "SentryFQDN":"Sentry5.domain1.com",
+                            "SentryIPAddress":"192.168.10.105"
+                     }
+                 },
+                 {
+                     "Sentry" : {
+                            "SentryFQDN" : "sentry6.domain1.com",
+                            "SentryIPAddress": "192.168.10.106"
+                     }
+                 }
+              ]
+            }
+          }
+  ],
+  "sentryUpgradeGroupList": [
+        { "groupName": "GroupA"},
+        { "groupName": "GroupB"}
+   ]
+}
