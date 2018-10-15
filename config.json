@@ -1,66 +1,22 @@
 {
-  "configVersion" : "1.0.0",  
-  "sentryGroup": [
-        {
-          "Group": {
-                 "groupName": "GroupA",
-                 "sentryList": [
-                     {
-                        "Sentry" : {
-                           "SentryFQDN":"Sentry1.domain1.com",
-                           "SentryIPAddress":"192.168.10.101"
-                       }
-                     },
-                     {
-                        "Sentry" : {
-                            "SentryFQDN" : "sentry2.domain1.com",
-                            "SentryIPAddress": "192.168.10.102"
-                        }
-                     }
-                 ]
-              }
-          },
-        {
-          "Group": {
-                "groupName": "GroupB",
-                "sentryList": [
-                    {
-                       "Sentry" : {
-                            "SentryFQDN":"Sentry3.domain1.com",
-                            "SentryIPAddress":"192.168.10.103"
-                       }
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
                     },
-                    {
-                       "Sentry" : {
-                            "SentryFQDN" : "sentry4.domain1.com",
-                            "SentryIPAddress": "192.168.10.104"
-                       }
-                    }
-                ]
+					"GlossSee": "markup"
+                }
             }
-          },
-          {
-              "Group": {
-              "groupName": "GroupC",
-              "sentryList": [
-                 {
-                     "Sentry" : {
-                            "SentryFQDN":"Sentry5.domain1.com",
-                            "SentryIPAddress":"192.168.10.105"
-                     }
-                 },
-                 {
-                     "Sentry" : {
-                            "SentryFQDN" : "sentry6.domain1.com",
-                            "SentryIPAddress": "192.168.10.106"
-                     }
-                 }
-              ]
-            }
-          }
-  ],
-  "sentryUpgradeGroupList": [
-        { "groupName": "GroupA"},
-        { "groupName": "GroupB"}
-   ]
+        }
+    }
 }
